@@ -1,0 +1,173 @@
+<!DOCTYPE html><!-- tipo de documento Html -->
+<html lang="en"><!-- idioma  -->
+
+<head><!-- se almacenan los metadatos -->
+    <meta charset="UTF-8"> <!--Codificacion-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robot" content="index, follow"><!-- para los motores de busqueda -->
+    <meta name="theme-color" content="#4285f4"><!-- color del tema -->
+    <meta name="description" content="Portafolio personal que muestra mis proyectos y habilidades.">
+    <!-- descripcion del sitio web -->
+    <title>Portafolio</title><!-- titulo que aparece en la pestana -->
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Portafolio Personal"><!-- titulo para compartir en redes sociales -->
+    <meta property="og:description" content="Explora mis proyectos y habilidades en mi portafolio personal.">
+    <!-- descripcion para compartir en redes sociales -->
+    <meta property="og:image" content="/img/portafolio.png"><!-- imagen para compartir en redes sociales -->
+    <meta property="og:type" content="website"><!-- tipo de contenido -->
+    <link rel="icon" href="/img/portafolio.png" type="image/x-icon"><!-- icono de la pestana -->
+    <link rel="alternate" hreflang="es" href="index.html"><!-- enlace alternativo en español -->
+    <link rel="canonical" href="https://www.miportafolio.com/index.html"><!-- enlace canonico -->
+    <link rel="stylesheet" href="styles.css"><!-- enlace a la hoja de estilos -->
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="https://github.com/ailindoor/Porfolio" target="_blank" rel="noreferrer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <audio controls>
+        <source src="https://filesamples.com/samples/audio/mp3/sample3.mp3" type="audio/mpeg"></audio>
+    <video autoplay loop muted 
+    src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"></video>
+    <main><!-- contenido principal -->
+        <p>Explora mis <strong>proyectos y habilidades</strong>.</p>
+
+        <h2 id="experiencia">Experiencia</h2>
+
+        <ul>
+            <li>Desarrollador Web en XYZ Company</li>
+            <li>Diseñador Gráfico Freelance</li>
+            <li>Gestor de Proyectos en ABC Agency</li>
+        </ul>
+        <a download="portafolio.png" href="/img/portafolio.png">
+            <img src="/img/portafolio.png" alt="Imagen de Portafolio" width="300" title="doodle" id="foto-perfil">
+        </a>
+        <h2 id="proyectos">Proyectos Destacados</h2>
+
+        <aside><!-- barra lateral -->
+            <header>
+                <h3>Mis tecnologis Favoritas</h3>
+            </header>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </aside>
+        <section><!-- seccion de proyectos -->
+            <article>
+                <header>
+                    <h4>Sitio Web corporativo</h4>
+                </header>
+                <p>Desarrollo de un sitio web corporativo para una empresa con una interfaz amigable</p>
+                <footer>
+                    <small>Tegnologias usada: HTML, CSS, JavaScript, NODE.JS</small>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h4>Sitio Web corporativo</h4>
+                </header>
+                <p>Desarrollo de un sitio web corporativo para una empresa con una interfaz amigable</p>
+                <footer>
+                    <small>Tegnologias usada: HTML, CSS, JavaScript, NODE.JS</small>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h4>Sitio Web corporativo</h4>
+                </header>
+                <p>Desarrollo de un sitio web corporativo para una empresa con una interfaz amigable</p>
+                <footer>
+                    <small>Tegnologias usada: HTML, CSS, JavaScript, NODE.JS</small>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Cuál es tu experiencia en desarrollo web?</summary>
+                <p>Tengo más de 5 años de experiencia en desarrollo web, trabajando con diversas tecnologías y frameworks.</p>
+            </details>
+            <details>
+                <summary>¿Ofreces servicios de diseño gráfico?</summary>
+                <p>Sí, ofrezco servicios de diseño gráfico para branding, marketing y otros proyectos visuales.</p>
+        <section>
+            <h2>formulario de contacto</h2>
+            <form action="/submit" method="post">
+                <fieldset><!-- agrupa elementos relacionados en un formulario -->
+                    <legend>Infromacion personal</legend><!-- titulo del grupo de elementos -->
+                    <div>
+                        <label>
+                            Nombre:
+                            <input type="text" id="name" name="name" required placeholder="ailin doria">
+                        </label>
+                    </div>
+
+                    <label>Correo Electrónico:
+                        <input type="email" name="email" required placeholder="ailidoria@gmailcom">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion Adicional</legend>
+                    <div>
+                        <label>
+                            telefono:
+                            <input type="tel" name="telefono" required placeholder="+1234567890" pattern="[0-9]{9-0}">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">por que quieres contactar</label>
+                        <select name="why" id="why">
+                            <option value="proyecto">proyecto</option>
+                            <option value="consulta">consulta</option>
+                            <option value="otro">otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="term">Aceptas los terminos</label>
+                        <input type="checkbox" name="term" id="term" required>
+                    </div>
+                    <div>
+                        <datalist id="lenguajes">
+                            <option value="JavaScript">
+                            <option value="Python">
+                            <option value="sql">
+                            <option value="Consultoría">
+                        </datalist>
+                        <label for="options">
+                            Lenguajes de Programacion:
+                            <input list="lenguajes" name="options" id="options" placeholder="Selecciona un lenguaje">
+                        </label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer><!-- pie de pagina -->
+        <small>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</small>
+
+        <a href="https://www.miportafolio.com/privacidad.html">Política de Privacidad</a>
+        <a href="mailto:ailindoria80@g mail.com">Contáctame</a>
+        <a href="tel:+1234567890">Llámanos</a>
+    </footer>
+</body>
+
+</html>
